@@ -98,7 +98,7 @@ def split():
     )
     thread.start()
 
-# TEXTS
+# TITLE
 title = ttk.Label(
     window,
     text="Stem Splitter",
@@ -106,16 +106,7 @@ title = ttk.Label(
 )
 title.pack(pady=20)
 
-archive_name = ttk.Label(
-    window,
-    text="None archive selected"
-)
-archive_name.pack(pady=15)
-
-status = ttk.Label(window, text="Ready")
-status.pack(pady=8)
-
-# BUTTON
+# ARCHIVE SELECTION BUTTON
 archive_button = ttk.Button(
     window,
     text="Choose a archive",
@@ -123,12 +114,24 @@ archive_button = ttk.Button(
 )
 archive_button.pack()
 
+# ARCHIVE NAME TEXT
+archive_name = ttk.Label(
+    window,
+    text="None archive selected"
+)
+archive_name.pack(pady=15)
+
+# SPLIT BUTTON
 split_button = ttk.Button(
     window,
     text="Split tracks",
     command=split
 )
 split_button.pack(pady=5)
+
+# STATUS TEXT
+status = ttk.Label(window, text="Ready")
+status.pack(pady=8)
 
 # PROGRESS BAR
 progress = ttk.Progressbar(
