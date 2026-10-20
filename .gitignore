@@ -4,6 +4,7 @@
 
 # Arquivos executáveis
 *.exe
+*.spec
 
 # Pasta do FFmpeg e outros binários locais
 bin/
@@ -14,6 +15,8 @@ __pycache__/
 
 # Ambiente virtual
 .venv/
+build/
+dist/
 .venv311/
 separated/
 venv/
